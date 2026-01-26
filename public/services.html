@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Abrahams Daughters</title>
+  <meta name="description" content="Explore our crisis support, resource navigation, educational programs, and family support services. Request help or schedule an appointment.">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#10084;</span>
+        <span class="logo-text">Abrahams Daughters</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/services.html" class="nav-link active">Services</a>
+        <a href="/events.html" class="nav-link">Events</a>
+        <a href="/gallery.html" class="nav-link">Gallery</a>
+        <a href="/blog.html" class="nav-link">Blog</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="/donate.html" class="btn btn-primary">Donate</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p>Resources and support services to strengthen stability, dignity, and long-term well-being.</p>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="services-detail-grid">
+          <div class="card service-detail-card">
+            <div class="service-icon">&#128591;</div>
+            <h3>Crisis Support</h3>
+            <p>Our crisis support team provides immediate assistance and guidance during difficult times. We offer:</p>
+            <ul class="service-features">
+              <li>24/7 Crisis hotline</li>
+              <li>Emergency resource allocation</li>
+              <li>Emotional support and counseling referrals</li>
+              <li>Safety planning assistance</li>
+            </ul>
+          </div>
+          
+          <div class="card service-detail-card">
+            <div class="service-icon">&#128101;</div>
+            <h3>Resource Navigation</h3>
+            <p>We help connect individuals with community resources and services that match their specific needs:</p>
+            <ul class="service-features">
+              <li>Housing assistance programs</li>
+              <li>Food security resources</li>
+              <li>Healthcare access</li>
+              <li>Legal aid referrals</li>
+            </ul>
+          </div>
+          
+          <div class="card service-detail-card">
+            <div class="service-icon">&#128218;</div>
+            <h3>Educational Programs</h3>
+            <p>Our educational programs are designed to build skills and knowledge for long-term success:</p>
+            <ul class="service-features">
+              <li>Financial literacy workshops</li>
+              <li>Job readiness training</li>
+              <li>Parenting classes</li>
+              <li>Life skills development</li>
+            </ul>
+          </div>
+          
+          <div class="card service-detail-card">
+            <div class="service-icon">&#10084;</div>
+            <h3>Family Support</h3>
+            <p>We provide comprehensive support for families navigating challenging circumstances:</p>
+            <ul class="service-features">
+              <li>Family counseling referrals</li>
+              <li>Childcare assistance</li>
+              <li>Youth mentorship programs</li>
+              <li>Support groups</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Help Request Form -->
+    <section class="section section-muted" id="request-help">
+      <div class="container">
+        <div style="max-width: 600px; margin: 0 auto;">
+          <div class="section-header">
+            <h2>Need Help / Request an Appointment</h2>
+            <p>Fill out the form below and our team will reach out to schedule an appointment or provide resources.</p>
+          </div>
+          
+          <div class="card">
+            <form id="helpRequestForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" name="name" class="form-input" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email Address *</label>
+                  <input type="email" name="email" class="form-input" placeholder="your@email.com" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Phone Number</label>
+                  <input type="tel" name="phone" class="form-input" placeholder="(123) 456-7890">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Service Type *</label>
+                  <select name="serviceType" class="form-select" required>
+                    <option value="">Select a service</option>
+                    <option value="crisis">Crisis Support</option>
+                    <option value="resources">Resource Navigation</option>
+                    <option value="education">Educational Programs</option>
+                    <option value="family">Family Support</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label">Preferred Date/Time</label>
+                <input type="text" name="preferredDate" class="form-input" placeholder="e.g., Monday afternoon, Any weekday morning">
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label">How can we help? *</label>
+                <textarea name="message" class="form-textarea" placeholder="Please describe your situation and how we can assist you..." required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+            </form>
+            
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); text-align: center;">
+              <p class="text-muted" style="margin-bottom: 1rem; font-size: 0.875rem;">Or contact us directly:</p>
+              <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; font-size: 0.875rem;">
+                <a href="tel:919-605-1214" class="text-primary">&#128222; 919-605-1214</a>
+                <a href="mailto:info@abrahamsdaughters.org" class="text-primary">&#9993; info@abrahamsdaughters.org</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-icon">&#9993;</div>
+          <h2>Stay Connected</h2>
+          <p>Subscribe to our newsletter to receive updates on our programs, events, and impact stories.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">&#10084;</span>
+            <span class="logo-text">Abrahams Daughters</span>
+          </div>
+          <p>Empowering lives, one person at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="/">Home</a>
+          <a href="/about.html">About Us</a>
+          <a href="/services.html">Services</a>
+          <a href="/donate.html">Donate</a>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="/events.html">Events</a>
+          <a href="/gallery.html">Gallery</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>919-605-1214</p>
+          <p>info@abrahamsdaughters.org</p>
+          <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Abrahams Daughters. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="chat-widget" id="chatWidget">
+    <button class="chat-toggle" id="chatToggle" aria-label="Open chat"><span class="chat-icon">&#128172;</span></button>
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header"><h4>Chat With Us</h4><button class="chat-close" id="chatClose">&times;</button></div>
+      <div class="chat-body"><p>Hi! How can we help you today?</p><p class="chat-note">This is a placeholder. Live chat coming soon!</p></div>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

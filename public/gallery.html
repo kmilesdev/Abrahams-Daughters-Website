@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | Abrahams Daughters</title>
+  <meta name="description" content="See photos from our events, programs, and the amazing community we serve at Abrahams Daughters.">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="/" class="logo">
+        <span class="logo-icon">&#10084;</span>
+        <span class="logo-text">Abrahams Daughters</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/services.html" class="nav-link">Services</a>
+        <a href="/events.html" class="nav-link">Events</a>
+        <a href="/gallery.html" class="nav-link active">Gallery</a>
+        <a href="/blog.html" class="nav-link">Blog</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="/donate.html" class="btn btn-primary">Donate</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Photo Gallery</h1>
+        <p>Take a look at our events, programs, and the amazing community we serve.</p>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="gallery-grid">
+          <div class="card gallery-card">
+            <div class="gallery-image" style="background: linear-gradient(135deg, #f472b6, #e11d48);">&#128197;</div>
+            <div class="gallery-info">
+              <h3>Community Outreach Event</h3>
+              <p>Events</p>
+            </div>
+          </div>
+          
+          <div class="card gallery-card">
+            <div class="gallery-image" style="background: linear-gradient(135deg, #a78bfa, #7c3aed);">&#128101;</div>
+            <div class="gallery-info">
+              <h3>Volunteer Team Building</h3>
+              <p>Volunteers</p>
+            </div>
+          </div>
+          
+          <div class="card gallery-card">
+            <div class="gallery-image" style="background: linear-gradient(135deg, #fb7185, #ec4899);">&#10084;</div>
+            <div class="gallery-info">
+              <h3>Annual Hope Gala 2024</h3>
+              <p>Fundraiser</p>
+            </div>
+          </div>
+          
+          <div class="card gallery-card">
+            <div class="gallery-image" style="background: linear-gradient(135deg, #fbbf24, #f97316);">&#129309;</div>
+            <div class="gallery-info">
+              <h3>Family Support Workshop</h3>
+              <p>Programs</p>
+            </div>
+          </div>
+          
+          <div class="card gallery-card">
+            <div class="gallery-image" style="background: linear-gradient(135deg, #34d399, #14b8a6);">&#128101;</div>
+            <div class="gallery-info">
+              <h3>Youth Mentorship Day</h3>
+              <p>Programs</p>
+            </div>
+          </div>
+          
+          <div class="card gallery-card">
+            <div class="gallery-image" style="background: linear-gradient(135deg, #60a5fa, #6366f1);">&#128197;</div>
+            <div class="gallery-info">
+              <h3>Community Resource Fair</h3>
+              <p>Events</p>
+            </div>
+          </div>
+          
+          <div class="card gallery-card">
+            <div class="gallery-image" style="background: linear-gradient(135deg, #f472b6, #e11d48);">&#10084;</div>
+            <div class="gallery-info">
+              <h3>Holiday Care Package Drive</h3>
+              <p>Outreach</p>
+            </div>
+          </div>
+          
+          <div class="card gallery-card">
+            <div class="gallery-image" style="background: linear-gradient(135deg, #22d3ee, #3b82f6);">&#128101;</div>
+            <div class="gallery-info">
+              <h3>Staff Appreciation Day</h3>
+              <p>Team</p>
+            </div>
+          </div>
+          
+          <div class="card gallery-card">
+            <div class="gallery-image" style="background: linear-gradient(135deg, #a78bfa, #7c3aed);">&#129309;</div>
+            <div class="gallery-info">
+              <h3>Partner Appreciation Dinner</h3>
+              <p>Events</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal-overlay" id="galleryModal">
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-image"></div>
+        <div class="modal-info">
+          <h3 class="modal-title"></h3>
+          <p class="modal-category text-muted"></p>
+        </div>
+        <button class="modal-nav modal-prev">&#8249;</button>
+        <button class="modal-nav modal-next">&#8250;</button>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="section" style="background: var(--primary-light);">
+      <div class="container text-center">
+        <h2>Want to Be Part of Our Story?</h2>
+        <p class="text-muted" style="max-width: 500px; margin: 1rem auto;">
+          Join our events, volunteer with us, or support our mission to create more moments like these.
+        </p>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-icon">&#9993;</div>
+          <h2>Stay Connected</h2>
+          <p>Subscribe to our newsletter to receive updates on our programs, events, and impact stories.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">&#10084;</span>
+            <span class="logo-text">Abrahams Daughters</span>
+          </div>
+          <p>Empowering lives, one person at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="/">Home</a>
+          <a href="/about.html">About Us</a>
+          <a href="/services.html">Services</a>
+          <a href="/donate.html">Donate</a>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="/events.html">Events</a>
+          <a href="/gallery.html">Gallery</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>919-605-1214</p>
+          <p>info@abrahamsdaughters.org</p>
+          <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Abrahams Daughters. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="chat-widget" id="chatWidget">
+    <button class="chat-toggle" id="chatToggle" aria-label="Open chat"><span class="chat-icon">&#128172;</span></button>
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header"><h4>Chat With Us</h4><button class="chat-close" id="chatClose">&times;</button></div>
+      <div class="chat-body"><p>Hi! How can we help you today?</p><p class="chat-note">This is a placeholder. Live chat coming soon!</p></div>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
