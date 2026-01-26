@@ -1,0 +1,255 @@
+{
+  "organization": {
+    "name": "Abrahams Daughters",
+    "tagline": "Empowering Lives, Restoring Dignity",
+    "phone": "919-605-1214",
+    "email": "info@abrahamsdaughters.org",
+    "hours": "Monday - Friday: 9:00 AM - 5:00 PM",
+    "address": "123 Hope Street, Raleigh, NC 27601"
+  },
+  "seo": {
+    "home": {
+      "title": "Home",
+      "description": "Abrahams Daughters provides resources and support services to those facing hardship. We offer guidance, education, and tools that strengthen stability, dignity, and long-term well-being."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Learn about Abrahams Daughters' mission to provide compassionate support and resources to individuals and families facing hardship."
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Explore our crisis support, resource navigation, educational programs, and family support services. Request help or schedule an appointment."
+    },
+    "events": {
+      "title": "Events",
+      "description": "Join us at our upcoming community events, fundraisers, and volunteer opportunities. Be part of our mission to support those in need."
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "description": "See photos from our events, programs, and the amazing community we serve at Abrahams Daughters."
+    },
+    "donate": {
+      "title": "Donate",
+      "description": "Your generous donation helps us continue our mission of supporting those in need. Every contribution makes a meaningful impact."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Stories of hope, community updates, and resources to inspire and support your journey from Abrahams Daughters."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Get in touch with Abrahams Daughters. We're here to help with questions, volunteer opportunities, or assistance requests."
+    }
+  },
+  "hero": {
+    "title": "Together, We Restore Hope",
+    "subtitle": "Providing resources, guidance, and compassionate support to those facing hardship. Your generosity helps us strengthen stability and dignity in our community.",
+    "ctaPrimary": "Donate Now",
+    "ctaSecondary": "Learn More",
+    "badge": "Making a difference since 2013"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "We are dedicated to providing resources and support services to those who are facing hardship by providing guidance, education, and access to tools that strengthen stability, dignity, and long-term well-being.",
+    "values": [
+      {
+        "title": "Compassion",
+        "description": "Every person deserves to be treated with kindness and understanding."
+      },
+      {
+        "title": "Dignity",
+        "description": "We uphold the inherent worth of every individual we serve."
+      },
+      {
+        "title": "Community",
+        "description": "Together, we create lasting change and support for all."
+      },
+      {
+        "title": "Empowerment",
+        "description": "We equip people with the tools they need to thrive."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Learn about our journey, mission, and the impact we're making in our community.",
+    "story": "Abrahams Daughters was founded with a simple yet powerful vision: to be a beacon of hope for those navigating life's most challenging moments. What started as a small community initiative has grown into a trusted organization that has touched thousands of lives.",
+    "storyExtended": "Today, we continue to grow and evolve, adapting our services to meet the changing needs of our community while staying true to our founding principles of compassion, dignity, and empowerment.",
+    "vision": "A community where every individual has access to the resources and support they need to live with dignity, stability, and hope for a brighter future.",
+    "joinTitle": "Join Our Mission",
+    "joinDescription": "Whether you want to volunteer your time, donate to our cause, or simply spread the word, there are many ways to support our mission.",
+    "impact": {
+      "title": "Our Impact",
+      "stats": [
+        { "number": "5,000+", "label": "Lives Touched" },
+        { "number": "12", "label": "Years of Service" },
+        { "number": "50+", "label": "Community Partners" },
+        { "number": "100%", "label": "Heart & Dedication" }
+      ]
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Resources and support services to those who are facing hardship by providing guidance, education, and access to tools that strengthen stability, dignity, and long-term well-being.",
+    "items": [
+      {
+        "title": "Crisis Support",
+        "description": "Immediate assistance and guidance during difficult times.",
+        "details": "Our crisis support team provides immediate assistance and guidance during difficult times. We offer:",
+        "features": ["24/7 Crisis hotline", "Emergency resource allocation", "Emotional support and counseling referrals", "Safety planning assistance"]
+      },
+      {
+        "title": "Resource Navigation",
+        "description": "Connecting individuals with community resources and services.",
+        "details": "We help connect individuals with community resources and services that match their specific needs:",
+        "features": ["Housing assistance programs", "Food security resources", "Healthcare access", "Legal aid referrals"]
+      },
+      {
+        "title": "Educational Programs",
+        "description": "Workshops and training to build skills and knowledge.",
+        "details": "Our educational programs are designed to build skills and knowledge for long-term success:",
+        "features": ["Financial literacy workshops", "Job readiness training", "Parenting classes", "Life skills development"]
+      },
+      {
+        "title": "Family Support",
+        "description": "Comprehensive support for families in need.",
+        "details": "We provide comprehensive support for families navigating challenging circumstances:",
+        "features": ["Family counseling referrals", "Childcare assistance", "Youth mentorship programs", "Support groups"]
+      }
+    ],
+    "helpFormTitle": "Need Help / Request an Appointment",
+    "helpFormDescription": "Fill out the form below and our team will reach out to schedule an appointment or provide resources."
+  },
+  "donate": {
+    "title": "Make a Difference Today",
+    "description": "Your generous donation helps us continue our mission of supporting those in need. Every contribution, no matter the size, makes a meaningful impact in someone's life.",
+    "amounts": [25, 50, 100, 250, 500],
+    "impactStatement": "100% of your donation goes directly to supporting our programs and services.",
+    "impactItems": [
+      { "amount": 25, "impact": "Provides emergency supplies for one family" },
+      { "amount": 50, "impact": "Supports one workshop participant for a week" },
+      { "amount": 100, "impact": "Funds crisis support services for one person" },
+      { "amount": 250, "impact": "Covers educational materials for a month" },
+      { "amount": 500, "impact": "Sponsors a family through our full program" }
+    ],
+    "otherWaysTitle": "Other Ways to Give",
+    "otherWaysDescription": "In addition to online donations, we accept checks, corporate matching gifts, and planned giving. Contact us to learn more about how you can support our mission.",
+    "taxNote": "Abrahams Daughters is a 501(c)(3) nonprofit organization. Your donation is tax-deductible."
+  },
+  "footer": {
+    "tagline": "Empowering lives, one person at a time.",
+    "quickLinks": [
+      { "label": "Home", "href": "/" },
+      { "label": "About Us", "href": "/about" },
+      { "label": "Services", "href": "/services" },
+      { "label": "Donate", "href": "/donate" }
+    ],
+    "resources": [
+      { "label": "Events", "href": "/events" },
+      { "label": "Gallery", "href": "/gallery" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "social": {
+      "facebook": "#",
+      "twitter": "#",
+      "instagram": "#",
+      "linkedin": "#"
+    }
+  },
+  "events": {
+    "title": "Upcoming Events",
+    "subtitle": "Join us at our upcoming events and be part of our mission to support and uplift our community.",
+    "hostEventTitle": "Want to Host a Fundraiser?",
+    "hostEventDescription": "Partner with us to organize a fundraiser or community event. We'd love to hear your ideas and work together to make a difference.",
+    "items": [
+      {
+        "id": "1",
+        "title": "Annual Hope Gala",
+        "date": "March 15, 2025",
+        "time": "6:00 PM - 10:00 PM",
+        "location": "Raleigh Convention Center",
+        "description": "Join us for an evening of celebration, inspiration, and fundraising as we honor our community partners and share stories of hope."
+      },
+      {
+        "id": "2",
+        "title": "Community Wellness Workshop",
+        "date": "February 20, 2025",
+        "time": "10:00 AM - 2:00 PM",
+        "location": "Community Center",
+        "description": "A free workshop focused on mental health, self-care, and building resilience for individuals and families."
+      },
+      {
+        "id": "3",
+        "title": "Volunteer Orientation",
+        "date": "February 8, 2025",
+        "time": "9:00 AM - 12:00 PM",
+        "location": "Abrahams Daughters Office",
+        "description": "Learn about volunteer opportunities and how you can make a difference in your community."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "Take a look at our events, programs, and the amazing community we serve.",
+    "ctaTitle": "Want to Be Part of Our Story?",
+    "ctaDescription": "Join our events, volunteer with us, or support our mission to create more moments like these.",
+    "items": [
+      { "id": 1, "title": "Community Outreach Event", "category": "Events", "icon": "Calendar", "color": "from-pink-400 to-rose-500" },
+      { "id": 2, "title": "Volunteer Team Building", "category": "Volunteers", "icon": "Users", "color": "from-violet-400 to-purple-500" },
+      { "id": 3, "title": "Annual Hope Gala 2024", "category": "Fundraiser", "icon": "Heart", "color": "from-rose-400 to-pink-500" },
+      { "id": 4, "title": "Family Support Workshop", "category": "Programs", "icon": "Handshake", "color": "from-amber-400 to-orange-500" },
+      { "id": 5, "title": "Youth Mentorship Day", "category": "Programs", "icon": "Users", "color": "from-emerald-400 to-teal-500" },
+      { "id": 6, "title": "Community Resource Fair", "category": "Events", "icon": "Calendar", "color": "from-blue-400 to-indigo-500" },
+      { "id": 7, "title": "Holiday Care Package Drive", "category": "Outreach", "icon": "Heart", "color": "from-pink-400 to-rose-500" },
+      { "id": 8, "title": "Staff Appreciation Day", "category": "Team", "icon": "Users", "color": "from-cyan-400 to-blue-500" },
+      { "id": 9, "title": "Partner Appreciation Dinner", "category": "Events", "icon": "Handshake", "color": "from-violet-400 to-purple-500" }
+    ]
+  },
+  "blog": {
+    "title": "Our Blog",
+    "subtitle": "Stories of hope, community updates, and resources to inspire and support your journey.",
+    "categoriesTitle": "Browse by Category",
+    "categories": ["Community", "Wellness", "Volunteers", "Events", "Resources", "Stories"],
+    "posts": [
+      {
+        "id": "1",
+        "title": "The Power of Community Support",
+        "excerpt": "Discover how community connections can transform lives and create lasting change for individuals and families.",
+        "date": "January 15, 2025",
+        "author": "Sarah Johnson",
+        "category": "Community"
+      },
+      {
+        "id": "2",
+        "title": "Building Resilience in Challenging Times",
+        "excerpt": "Practical strategies for maintaining hope and strength when facing life's obstacles.",
+        "date": "January 10, 2025",
+        "author": "Michael Chen",
+        "category": "Wellness"
+      },
+      {
+        "id": "3",
+        "title": "Volunteer Spotlight: Making a Difference",
+        "excerpt": "Meet the dedicated volunteers who give their time and hearts to support our mission.",
+        "date": "January 5, 2025",
+        "author": "Emily Rodriguez",
+        "category": "Volunteers"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions or need assistance? We're here to help. Reach out to us through any of the methods below.",
+    "formTitle": "Send Us a Message"
+  },
+  "cta": {
+    "supportTitle": "Your Support Matters",
+    "supportDescription": "Every donation, no matter the size, helps us continue our mission of providing hope and support to those in need."
+  },
+  "newsletter": {
+    "title": "Stay Connected",
+    "description": "Subscribe to our newsletter to receive updates on our programs, events, and impact stories.",
+    "privacyNote": "We respect your privacy. Unsubscribe at any time."
+  }
+}
