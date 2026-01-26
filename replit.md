@@ -1,58 +1,52 @@
 # Abrahams Daughters - Nonprofit Donation Website
 
 ## Overview
-A modern, mobile-first nonprofit donation website for "Abrahams Daughters" featuring a soft pink theme, multiple pages, forms for contact/help requests, and donation functionality.
+A clean, modern nonprofit donation website for "Abrahams Daughters" built with plain HTML, CSS, and JavaScript (no frameworks). Features a soft pink theme, mobile-first responsive design, and multiple pages for services, donations, and community engagement.
 
 ## Project Architecture
 
-### Frontend (React + TypeScript)
-- **Framework:** React with TypeScript
-- **Routing:** Wouter
-- **Styling:** Tailwind CSS with Shadcn UI components
-- **State Management:** TanStack Query for server state
-- **Forms:** React Hook Form with Zod validation
+### Frontend (Plain HTML/CSS/JS)
+- **Structure:** Static HTML pages served from `/public` folder
+- **Styling:** Custom CSS with CSS variables for theming
+- **Interactivity:** Vanilla JavaScript for forms, navigation, and UI interactions
+- **No frameworks:** No React, TypeScript, or build tools needed
 
 ### Backend (Express + Node.js)
-- **Server:** Express.js
+- **Server:** Express.js serving static files + API endpoints
 - **Storage:** In-memory storage (MemStorage class)
-- **Validation:** Zod schemas shared between frontend and backend
+- **Validation:** Zod schemas for API request validation
 
 ### Theme
 - Soft pink color scheme (HSL 340 hue)
 - White background with pink accents
-- Full dark mode support
 - Inter font for body, Playfair Display for headings
+- Mobile-first responsive design
 
 ## File Structure
 
 ```
-client/src/
-├── components/
-│   ├── Header.tsx          # Sticky navigation with mobile menu
-│   ├── Footer.tsx          # Site footer with contact info
-│   ├── LiveChatWidget.tsx  # Chat widget placeholder
-│   ├── NewsletterSection.tsx # Email signup component
-│   └── ui/                 # Shadcn UI components
-├── content/
-│   └── site-content.json   # Editable site content
-├── pages/
-│   ├── Home.tsx            # Landing page with hero
-│   ├── About.tsx           # Organization story/mission
-│   ├── Services.tsx        # Services + help request form
-│   ├── Events.tsx          # Event listings
-│   ├── Gallery.tsx         # Photo gallery with lightbox
-│   ├── Donate.tsx          # Donation page
-│   ├── Blog.tsx            # Blog posts
-│   └── Contact.tsx         # Contact form
-├── App.tsx                 # Main app with routing
-└── index.css               # Theme variables
+public/
+├── index.html          # Home page
+├── about.html          # About Us page
+├── services.html       # Services + help request form
+├── events.html         # Upcoming events
+├── gallery.html        # Photo gallery
+├── donate.html         # Donation page
+├── blog.html           # Blog posts
+├── contact.html        # Contact form
+├── css/
+│   └── styles.css      # All CSS styles
+└── js/
+    └── main.js         # JavaScript for forms, navigation, etc.
 
 server/
-├── routes.ts               # API endpoints
-└── storage.ts              # In-memory storage
+├── index.ts            # Express server setup
+├── routes.ts           # API endpoints
+├── storage.ts          # In-memory storage
+└── static.ts           # Static file serving
 
 shared/
-└── schema.ts               # Shared Zod schemas
+└── schema.ts           # Zod validation schemas
 ```
 
 ## API Endpoints
@@ -68,47 +62,52 @@ shared/
 | POST | /api/donations | Submit donation |
 | GET | /api/donations | Get all donations |
 
-## Content Management
+## Pages
 
-All editable content is in `client/src/content/site-content.json`:
-- Organization info (name, phone, email, hours)
-- Hero section text
-- Mission and values
-- Services descriptions
-- Events list
-- Blog posts
-- Footer links
+1. **Home** (index.html) - Hero section, mission, services preview, stats, CTA
+2. **About** (about.html) - Organization story, mission/vision, values, impact
+3. **Services** (services.html) - Service details + help request form
+4. **Events** (events.html) - Upcoming community events
+5. **Gallery** (gallery.html) - Photo gallery with modal lightbox
+6. **Donate** (donate.html) - Donation form with amount selection
+7. **Blog** (blog.html) - Blog posts and categories
+8. **Contact** (contact.html) - Contact form and info
 
 ## Key Features
-1. Sticky navigation with prominent Donate button
-2. Mobile-responsive design
-3. Contact form with validation
+1. Sticky navigation with Donate button
+2. Mobile hamburger menu
+3. Contact form with backend integration
 4. Help/Appointment request form
-5. Newsletter signup (Mailchimp-ready)
-6. Donation form with suggested amounts
+5. Newsletter signup on multiple pages
+6. Donation form with preset amounts
 7. Live chat widget placeholder
 8. Photo gallery with lightbox
-9. Blog section
-10. Dark mode support
+9. Toast notifications for form feedback
+10. Fully responsive (mobile-first)
+
+## Editing Content
+
+All content is directly in HTML files for easy editing:
+- Update text in the HTML files
+- Modify styles in `/public/css/styles.css`
+- Change JavaScript behavior in `/public/js/main.js`
 
 ## Running the Project
 ```bash
 npm run dev
 ```
-This starts both the Express backend and Vite dev server.
+Starts the Express server on port 5000.
 
 ## Recent Changes
-- January 2025: Per-page SEO with react-helmet-async - unique titles/meta for each route
-- January 2025: Forms refactored to shadcn Form + useForm + zodResolver pattern
-- January 2025: Expanded site-content.json with all page content (SEO, services details, gallery items, blog posts, events)
-- January 2025: Accessibility fix for Gallery dialog (DialogTitle/DialogDescription)
-- Initial build: Complete nonprofit website with all pages and forms
-- Pink theme implemented with HSL 340 hue
-- All forms connected to backend API
-- In-memory storage for form submissions
+- **January 2025:** Complete rebuild from React/TypeScript to plain HTML/CSS/JS
+- All 8 pages created with consistent design
+- Forms connected to backend API endpoints
+- Mobile-responsive navigation
+- Soft pink theme (HSL 340) implemented
+- Toast notifications for form feedback
 
 ## User Preferences
+- Plain HTML/CSS/JS (no TypeScript or React frameworks)
 - Mobile-first responsive design
 - Clean, accessible UI
-- Fast loading performance
-- Admin-friendly content structure in JSON
+- Easy to edit content directly
