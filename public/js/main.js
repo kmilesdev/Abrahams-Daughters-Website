@@ -129,6 +129,13 @@ function submitForm(form, endpoint, successMessage) {
     data[key] = value;
   });
   
+  // Combine firstName and lastName into name for contact form
+  if (data.firstName && data.lastName) {
+    data.name = data.firstName + ' ' + data.lastName;
+    delete data.firstName;
+    delete data.lastName;
+  }
+  
   submitBtn.classList.add('loading');
   
   fetch(endpoint, {
