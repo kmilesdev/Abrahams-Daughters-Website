@@ -3,32 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events | Abrahams Daughters</title>
-  <meta name="description" content="Join us at our upcoming community events, fundraisers, and volunteer opportunities. Be part of our mission to support those in need.">
+  <title>Events | Abraham's Daughters</title>
+  <meta name="description" content="Join us at upcoming community events, fundraisers, and celebrations organized by Abraham's Daughters.">
   <link rel="stylesheet" href="/css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/images/logo.png">
 </head>
 <body>
   <!-- Header -->
   <header class="header" id="header">
     <div class="container header-container">
       <a href="/" class="logo">
-        <span class="logo-icon">&#10084;</span>
-        <span class="logo-text">Abrahams Daughters</span>
+        <img src="/images/logo.png" alt="Abraham's Daughters Logo">
+        <span class="logo-text">Abraham's Daughters</span>
       </a>
       <nav class="nav" id="nav">
         <a href="/" class="nav-link">Home</a>
-        <a href="/about.html" class="nav-link">About</a>
-        <a href="/services.html" class="nav-link">Services</a>
-        <a href="/events.html" class="nav-link active">Events</a>
+        <a href="/about.html" class="nav-link">About Us</a>
+        <a href="/team.html" class="nav-link">Meet the Team</a>
         <a href="/gallery.html" class="nav-link">Gallery</a>
-        <a href="/blog.html" class="nav-link">Blog</a>
-        <a href="/contact.html" class="nav-link">Contact</a>
+        <a href="/events.html" class="nav-link active">Events</a>
       </nav>
       <div class="header-actions">
-        <a href="/donate.html" class="btn btn-primary">Donate</a>
+        <a href="/#contact" class="btn btn-primary">Contact Us</a>
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
@@ -41,91 +37,64 @@
     <section class="page-header">
       <div class="container">
         <h1>Upcoming Events</h1>
-        <p>Join us at our upcoming events and be part of our mission to support and uplift our community.</p>
+        <p>Join us at our upcoming community events and celebrations</p>
       </div>
     </section>
 
     <!-- Events List -->
     <section class="section">
       <div class="container">
-        <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
+        <div class="events-grid">
           <!-- Event 1 -->
-          <div class="card event-card">
-            <div class="event-date-block">
-              <span>&#128197;</span>
-              <p style="font-weight: 600; margin-top: 0.5rem;">March 15, 2025</p>
+          <div class="card event-card" data-testid="event-card-1">
+            <div class="event-image">
+              <div class="image-placeholder">
+                <span class="image-placeholder-text">Event Image</span>
+              </div>
             </div>
             <div class="event-content">
-              <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 1rem;">
-                <div>
-                  <h3>Annual Hope Gala</h3>
-                  <div class="event-meta">
-                    <span>&#128337; 6:00 PM - 10:00 PM</span>
-                    <span>&#128205; Raleigh Convention Center</span>
-                  </div>
-                </div>
-                <span class="badge">Upcoming</span>
-              </div>
-              <p class="text-muted" style="margin: 1rem 0; font-size: 0.875rem;">
-                Join us for an evening of celebration, inspiration, and fundraising as we honor our community partners and share stories of hope.
-              </p>
-              <div class="event-buttons">
-                <a href="#" class="btn btn-outline">Learn More &rarr;</a>
-                <a href="#" class="btn btn-primary">Register</a>
+              <span class="event-date">March 15, 2025</span>
+              <h3>Community Celebration Gala</h3>
+              <p>Join us for an evening of celebration, inspiration, and community as we honor our partners and share stories of impact.</p>
+              <div class="event-meta">
+                <span>6:00 PM - 10:00 PM</span>
+                <span>Garner, NC</span>
               </div>
             </div>
           </div>
-          
+
           <!-- Event 2 -->
-          <div class="card event-card">
-            <div class="event-date-block">
-              <span>&#128197;</span>
-              <p style="font-weight: 600; margin-top: 0.5rem;">February 20, 2025</p>
+          <div class="card event-card" data-testid="event-card-2">
+            <div class="event-image">
+              <div class="image-placeholder">
+                <span class="image-placeholder-text">Event Image</span>
+              </div>
             </div>
             <div class="event-content">
-              <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 1rem;">
-                <div>
-                  <h3>Community Wellness Workshop</h3>
-                  <div class="event-meta">
-                    <span>&#128337; 10:00 AM - 2:00 PM</span>
-                    <span>&#128205; Community Center</span>
-                  </div>
-                </div>
-                <span class="badge">Upcoming</span>
-              </div>
-              <p class="text-muted" style="margin: 1rem 0; font-size: 0.875rem;">
-                A free workshop focused on mental health, self-care, and building resilience for individuals and families.
-              </p>
-              <div class="event-buttons">
-                <a href="#" class="btn btn-outline">Learn More &rarr;</a>
-                <a href="#" class="btn btn-primary">Register</a>
+              <span class="event-date">April 20, 2025</span>
+              <h3>Women's Empowerment Workshop</h3>
+              <p>A free workshop focused on personal development, financial literacy, and building confidence for women in our community.</p>
+              <div class="event-meta">
+                <span>10:00 AM - 2:00 PM</span>
+                <span>Community Center</span>
               </div>
             </div>
           </div>
-          
+
           <!-- Event 3 -->
-          <div class="card event-card">
-            <div class="event-date-block">
-              <span>&#128197;</span>
-              <p style="font-weight: 600; margin-top: 0.5rem;">February 8, 2025</p>
+          <div class="card event-card" data-testid="event-card-3">
+            <div class="event-image">
+              <div class="image-placeholder">
+                <span class="image-placeholder-text">Event Image</span>
+              </div>
             </div>
             <div class="event-content">
-              <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 1rem;">
-                <div>
-                  <h3>Volunteer Orientation</h3>
-                  <div class="event-meta">
-                    <span>&#128337; 9:00 AM - 12:00 PM</span>
-                    <span>&#128205; Abrahams Daughters Office</span>
-                  </div>
-                </div>
-                <span class="badge">Upcoming</span>
-              </div>
-              <p class="text-muted" style="margin: 1rem 0; font-size: 0.875rem;">
-                Learn about volunteer opportunities and how you can make a difference in your community.
-              </p>
-              <div class="event-buttons">
-                <a href="#" class="btn btn-outline">Learn More &rarr;</a>
-                <a href="#" class="btn btn-primary">Register</a>
+              <span class="event-date">May 10, 2025</span>
+              <h3>Spring Charity Brunch</h3>
+              <p>Enjoy a beautiful spring brunch while supporting our mission to help women in need. All proceeds go directly to our programs.</p>
+              <div class="event-meta">
+                <span>11:00 AM - 2:00 PM</span>
+                <span>Garner, NC</span>
               </div>
             </div>
           </div>
@@ -134,30 +103,13 @@
     </section>
 
     <!-- Host Event CTA -->
-    <section class="section section-muted">
-      <div class="container">
-        <div class="card text-center" style="max-width: 600px; margin: 0 auto; padding: 3rem;">
-          <div class="card-icon" style="margin: 0 auto 1rem;">&#10084;</div>
-          <h2>Want to Host a Fundraiser?</h2>
-          <p class="text-muted mb-2">Partner with us to organize a fundraiser or community event. We'd love to hear your ideas and work together to make a difference.</p>
-          <a href="/contact.html" class="btn btn-primary">Contact Us &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter-section">
-      <div class="container">
-        <div class="newsletter-content">
-          <div class="newsletter-icon">&#9993;</div>
-          <h2>Stay Connected</h2>
-          <p>Subscribe to our newsletter to receive updates on our programs, events, and impact stories.</p>
-          <form class="newsletter-form" id="newsletterForm">
-            <input type="email" name="email" placeholder="Enter your email" required>
-            <button type="submit" class="btn btn-primary">Subscribe</button>
-          </form>
-          <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
-        </div>
+    <section class="section" style="background: var(--primary-light);">
+      <div class="container text-center">
+        <h2>Want to Host an Event With Us?</h2>
+        <p class="text-muted" style="max-width: 500px; margin: 1rem auto 2rem;">
+          Partner with us to organize a fundraiser, celebration, or community event. We'd love to hear your ideas!
+        </p>
+        <a href="/#contact" class="btn btn-primary btn-lg">Contact Us</a>
       </div>
     </section>
   </main>
@@ -167,45 +119,52 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="logo">
-            <span class="logo-icon">&#10084;</span>
-            <span class="logo-text">Abrahams Daughters</span>
-          </div>
-          <p>Empowering lives, one person at a time.</p>
+          <a href="/" class="logo">
+            <img src="/images/logo.png" alt="Abraham's Daughters">
+          </a>
+          <p>A nonprofit charity organization established in 2014 in Garner, North Carolina.</p>
         </div>
         <div class="footer-links">
           <h4>Quick Links</h4>
           <a href="/">Home</a>
           <a href="/about.html">About Us</a>
-          <a href="/services.html">Services</a>
-          <a href="/donate.html">Donate</a>
+          <a href="/team.html">Meet the Team</a>
+          <a href="/gallery.html">Gallery</a>
+          <a href="/events.html">Events</a>
         </div>
         <div class="footer-links">
-          <h4>Resources</h4>
-          <a href="/events.html">Events</a>
-          <a href="/gallery.html">Gallery</a>
-          <a href="/blog.html">Blog</a>
-          <a href="/contact.html">Contact</a>
+          <h4>Services</h4>
+          <a href="#">Event Planning</a>
+          <a href="#">Event Consultation</a>
+          <a href="#">Design & Decorate</a>
         </div>
         <div class="footer-contact">
-          <h4>Contact Us</h4>
-          <p>919-605-1214</p>
+          <h4>Contact Info</h4>
+          <p>Garner, North Carolina</p>
           <p>info@abrahamsdaughters.org</p>
-          <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+          <div class="footer-social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Abrahams Daughters. All rights reserved.</p>
+        <p>&copy; 2024 Abraham's Daughters. All rights reserved. | Nonprofit Organization Est. 2014</p>
       </div>
     </div>
   </footer>
 
-  <div class="chat-widget" id="chatWidget">
-    <button class="chat-toggle" id="chatToggle" aria-label="Open chat"><span class="chat-icon">&#128172;</span></button>
-    <div class="chat-window" id="chatWindow">
-      <div class="chat-header"><h4>Chat With Us</h4><button class="chat-close" id="chatClose">&times;</button></div>
-      <div class="chat-body"><p>Hi! How can we help you today?</p><p class="chat-note">This is a placeholder. Live chat coming soon!</p></div>
-    </div>
+  <!-- Toast Notification -->
+  <div class="toast-container">
+    <div class="toast" id="toast"></div>
   </div>
 
   <script src="/js/main.js"></script>
