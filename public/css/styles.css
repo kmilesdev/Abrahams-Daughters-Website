@@ -341,6 +341,40 @@ h4 { font-size: 1.25rem; }
 }
 
 /* ==========================================
+   Announcement Marquee
+   ========================================== */
+.marquee {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 1rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee-scroll 20s linear infinite;
+}
+
+.marquee-content span {
+  display: inline-block;
+  padding: 0 3rem;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* ==========================================
    Bible Verse Section
    ========================================== */
 .bible-verse {
