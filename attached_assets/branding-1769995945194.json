@@ -1,0 +1,153 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Space Grotesk",
+      "role": "body"
+    },
+    {
+      "family": "Madefor Text",
+      "role": "body"
+    },
+    {
+      "family": "Sora",
+      "role": "heading"
+    }
+  ],
+  "colors": {
+    "primary": "#824242",
+    "accent": "#824242",
+    "background": "#FFFFFF",
+    "textPrimary": "#824242",
+    "link": "#824242"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Space Grotesk",
+      "heading": "Sora"
+    },
+    "fontStacks": {
+      "heading": [
+        "Sora",
+        "sans-serif"
+      ],
+      "body": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Space Grotesk",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "40px",
+      "h2": "52px",
+      "body": "18px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "0px"
+  },
+  "components": {
+    "input": {
+      "background": "transparent",
+      "textColor": "#824242",
+      "borderColor": null,
+      "borderRadius": "0px",
+      "borderRadiusCorners": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      },
+      "shadow": "none"
+    },
+    "buttonPrimary": {
+      "background": "#824242",
+      "textColor": "#0000EE",
+      "borderColor": "#824242",
+      "borderRadius": "50px",
+      "borderRadiusCorners": {
+        "topLeft": "50px",
+        "topRight": "50px",
+        "bottomRight": "50px",
+        "bottomLeft": "50px"
+      },
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "transparent",
+      "textColor": "#0000EE",
+      "borderColor": "#824242",
+      "borderRadius": "0px",
+      "borderRadiusCorners": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.png",
+    "favicon": "https://www.wix.com/favicon.ico",
+    "ogImage": null
+  },
+  "__framework_hints": [
+    "Wix.com Website Builder",
+    "bootstrap"
+  ],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Selected #0 because it is the only visible logo in the header area, matching the brand inferred from the page title and URL.",
+    "confidence": 0.9,
+    "source": "llm"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 1,
+      "text": "Contact Us",
+      "reasoning": "Button #1 ('Contact Us') uses the vibrant brand color #824242, making it stand out as the primary call-to-action."
+    },
+    "secondary": {
+      "index": 2,
+      "text": "Get Started",
+      "reasoning": "Button #2 ('Get Started') has a transparent background, providing a contrast to the primary button's vibrant color, making it suitable as a secondary CTA."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "Individuals interested in Abraham's Daughters' offerings"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": true,
+      "llmSucceeded": true,
+      "finalSource": "llm",
+      "rawLogoSelection": {
+        "selectedLogoIndex": 0,
+        "selectedLogoReasoning": "Selected #0 because it is the only visible logo in the header area, matching the brand inferred from the page title and URL.",
+        "confidence": 0.9
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}
