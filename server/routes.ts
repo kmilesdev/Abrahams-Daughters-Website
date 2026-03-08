@@ -8,11 +8,97 @@ import {
   donationSchema 
 } from "@shared/schema";
 import { ZodError } from "zod";
+import Stripe from "stripe";
+
+function getStripe(): Stripe {
+  const key = process.env.STRIPE_SECRET_KEY;
+  if (!key) {
+    throw new Error("STRIPE_SECRET_KEY is not configured");
+  }
+  return new Stripe(key);
+}
 
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
+
+  app.post("/api/create-checkout-session", async (req, res) => {
+    try {
+      const { amount, name, email, message, recurring } = req.body;
+
+      const amountNum = parseFloat(amount);
+      if (!amountNum || amountNum < 1) {
+        res.status(400).json({ success: false, message: "Amount must be at least $1" });
+        return;
+      }
+
+      const protocol = req.headers["x-forwarded-proto"] || req.protocol;
+      const host = req.headers.host;
+      const baseUrl = `${protocol}://${host}`;
+
+      const metadata: Record<string, string> = {};
+      if (name) metadata.donor_name = name;
+      if (email) metadata.donor_email = email;
+      if (message) metadata.donor_message = message;
+
+      const stripe = getStripe();
+
+      if (recurring) {
+        const product = await stripe.products.create({
+          name: "Abraham's Daughters Monthly Donation",
+        });
+        const price = await stripe.prices.create({
+          product: product.id,
+          unit_amount: Math.round(amountNum * 100),
+          currency: "usd",
+          recurring: { interval: "month" },
+        });
+
+        const session = await stripe.checkout.sessions.create({
+          mode: "subscription",
+          payment_method_types: ["card"],
+          line_items: [{ price: price.id, quantity: 1 }],
+          success_url: `${baseUrl}/donate-success.html`,
+          cancel_url: `${baseUrl}/donate-cancel.html`,
+          customer_email: email || undefined,
+          metadata,
+        });
+
+        res.json({ success: true, url: session.url });
+      } else {
+        const session = await stripe.checkout.sessions.create({
+          mode: "payment",
+          payment_method_types: ["card"],
+          line_items: [
+            {
+              price_data: {
+                currency: "usd",
+                product_data: {
+                  name: "Donation to Abraham's Daughters",
+                  description: "Thank you for supporting our mission",
+                },
+                unit_amount: Math.round(amountNum * 100),
+              },
+              quantity: 1,
+            },
+          ],
+          success_url: `${baseUrl}/donate-success.html`,
+          cancel_url: `${baseUrl}/donate-cancel.html`,
+          customer_email: email || undefined,
+          metadata,
+        });
+
+        res.json({ success: true, url: session.url });
+      }
+    } catch (error: any) {
+      console.error("Stripe checkout error:", error.message);
+      res.status(500).json({
+        success: false,
+        message: "Failed to create checkout session. Please try again.",
+      });
+    }
+  });
   
   // Contact form submission
   app.post("/api/contact", async (req, res) => {

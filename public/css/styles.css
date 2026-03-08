@@ -1056,6 +1056,228 @@ h4 { font-size: 1.25rem; }
 }
 
 /* ==========================================
+   Donate Page
+   ========================================== */
+.donate-hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, #fdf2f4 0%, #fff5f5 50%, #fff 100%);
+  text-align: center;
+}
+
+.donate-hero-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.donate-hero-content h1 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.donate-hero-content p {
+  font-size: 1.125rem;
+  color: var(--muted-foreground);
+  line-height: 1.7;
+}
+
+.donate-section {
+  padding: 0 0 5rem;
+  background: linear-gradient(180deg, #fff 0%, #fdf8f8 100%);
+}
+
+.donate-card {
+  max-width: 600px;
+  margin: -2rem auto 0;
+  background: #fff;
+  border: 1px solid #f0e0e0;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 24px rgba(130, 66, 66, 0.08);
+}
+
+.donate-card h2 {
+  text-align: center;
+  font-size: 1.375rem;
+  margin-bottom: 1.5rem;
+  color: var(--foreground);
+}
+
+.donate-card h3 {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.donate-optional {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.donate-amounts {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.donate-amount-btn {
+  padding: 0.875rem 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  border: 2px solid #e8d5d5;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--foreground);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.donate-amount-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: #fdf2f4;
+}
+
+.donate-amount-btn.selected {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+@media (max-width: 480px) {
+  .donate-amounts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.donate-custom {
+  margin-bottom: 1.25rem;
+}
+
+.donate-custom-input-wrap {
+  position: relative;
+}
+
+.donate-currency {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--muted-foreground);
+}
+
+.donate-custom-input-wrap .form-input {
+  padding-left: 2rem;
+  font-size: 1.125rem;
+  border-radius: 8px;
+}
+
+.donate-recurring {
+  margin-bottom: 1.5rem;
+}
+
+.donate-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  color: var(--foreground);
+}
+
+.donate-checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.donate-divider {
+  border: none;
+  border-top: 1px solid #f0e0e0;
+  margin: 1.5rem 0;
+}
+
+.donate-error {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.donate-submit-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.0625rem;
+  margin-bottom: 1rem;
+}
+
+.donate-secure-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--muted-foreground);
+  text-align: center;
+}
+
+.donate-result-section {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #fdf2f4 0%, #fff 100%);
+}
+
+.donate-result-card {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 24px rgba(130, 66, 66, 0.08);
+}
+
+.donate-result-icon {
+  margin-bottom: 1.5rem;
+}
+
+.donate-result-card h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.donate-result-message {
+  font-size: 1.0625rem;
+  color: var(--muted-foreground);
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.donate-result-sub {
+  font-size: 0.9375rem;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.donate-result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ==========================================
    Utilities
    ========================================== */
 .text-center { text-align: center; }

@@ -1,7 +1,7 @@
 # Abraham's Daughters - Nonprofit Event Planning Website
 
 ## Overview
-A clean, modern nonprofit event planning website for "Abraham's Daughters" built with plain HTML, CSS, and JavaScript (no frameworks). Features a burgundy theme (#824242), Sora/Space Grotesk fonts, mobile-first responsive design, and 5 pages focused on event planning services with proceeds supporting women in the community.
+A clean, modern nonprofit event planning website for "Abraham's Daughters" built with plain HTML, CSS, and JavaScript (no frameworks). Features a burgundy theme (#824242), Sora/Space Grotesk fonts, mobile-first responsive design, and 6 pages focused on event planning services with proceeds supporting women in the community. Includes a Stripe-powered Donate page.
 
 ## Organization Info
 - **Established:** 2014
@@ -37,6 +37,9 @@ public/
 ├── team.html           # Meet the Team page
 ├── gallery.html        # Photo gallery (Weddings, Events, Design & Decorate)
 ├── events.html         # Upcoming events
+├── donate.html         # Donate page (Stripe Checkout)
+├── donate-success.html # Donation success/thank you page
+├── donate-cancel.html  # Donation cancelled page
 ├── images/
 │   └── logo.png        # Organization logo
 ├── css/
@@ -66,6 +69,7 @@ shared/
 | GET | /api/newsletter | Get all subscriptions |
 | POST | /api/donations | Submit donation |
 | GET | /api/donations | Get all donations |
+| POST | /api/create-checkout-session | Create Stripe Checkout session |
 
 ## Pages
 
@@ -74,6 +78,9 @@ shared/
 3. **Meet the Team** (team.html) - Team member cards with placeholder photos
 4. **Gallery** (gallery.html) - Photo gallery organized by categories (Weddings, Events, Design & Decorate)
 5. **Events** (events.html) - Upcoming community events and fundraisers
+6. **Donate** (donate.html) - Stripe Checkout donation page with suggested amounts ($10/$25/$50/$100/$250), custom amount, optional name/email/message, monthly recurring option
+   - **Success** (donate-success.html) - Thank you page after successful donation
+   - **Cancel** (donate-cancel.html) - Page shown when donation is cancelled
 
 ## Key Features
 1. Sticky navigation with Contact Us button
@@ -86,6 +93,10 @@ shared/
 8. Toast notifications for form feedback
 9. Fully responsive (mobile-first)
 10. Image placeholders throughout (ready for actual images to be uploaded)
+11. Stripe Checkout integration for donations (one-time + monthly recurring)
+
+## Environment Variables
+- **STRIPE_SECRET_KEY** (secret) - Required for Stripe Checkout integration on the donate page
 
 ## Editing Content
 
@@ -102,6 +113,7 @@ npm run dev
 Starts the Express server on port 5000.
 
 ## Recent Changes
+- **March 2026:** Added Donate page with Stripe Checkout integration (one-time + monthly recurring), success/cancel pages, soft pink/white theme
 - **February 2025:** Complete rebrand to event planning focus
 - Updated branding: Burgundy theme (#824242), Sora/Space Grotesk fonts
 - Reduced to 5 pages (Home, About Us, Meet the Team, Gallery, Events)

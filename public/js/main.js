@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initForms();
   initGalleryModal();
   initDonationAmounts();
+  initDonateForm();
 });
 
 // ==========================================
@@ -315,4 +316,96 @@ function initDonationAmounts() {
       if (customBtn) customBtn.classList.add('selected');
     });
   }
+}
+
+// ==========================================
+// Donate Page (Stripe Checkout)
+// ==========================================
+function initDonateForm() {
+  var donateForm = document.getElementById('donateForm');
+  if (!donateForm) return;
+
+  var amountBtns = document.querySelectorAll('.donate-amount-btn');
+  var customAmountInput = document.getElementById('donateCustomAmount');
+  var selectedAmount = 50;
+
+  amountBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      amountBtns.forEach(function(b) { b.classList.remove('selected'); });
+      btn.classList.add('selected');
+      selectedAmount = parseFloat(btn.dataset.amount);
+      if (customAmountInput) customAmountInput.value = '';
+    });
+  });
+
+  if (customAmountInput) {
+    customAmountInput.addEventListener('input', function() {
+      if (customAmountInput.value) {
+        amountBtns.forEach(function(b) { b.classList.remove('selected'); });
+        selectedAmount = 0;
+      }
+    });
+    customAmountInput.addEventListener('focus', function() {
+      amountBtns.forEach(function(b) { b.classList.remove('selected'); });
+      selectedAmount = 0;
+    });
+  }
+
+  donateForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var errorEl = document.getElementById('donateError');
+    var submitBtn = document.getElementById('donateSubmitBtn');
+    errorEl.style.display = 'none';
+
+    var amount = selectedAmount;
+    if (customAmountInput && customAmountInput.value) {
+      amount = parseFloat(customAmountInput.value);
+    }
+
+    if (!amount || amount < 1) {
+      errorEl.textContent = 'Please enter a valid donation amount (minimum $1).';
+      errorEl.style.display = 'block';
+      return;
+    }
+
+    var name = document.getElementById('donateName').value.trim();
+    var email = document.getElementById('donateEmail').value.trim();
+    var message = document.getElementById('donateMessage').value.trim();
+    var recurring = document.getElementById('donateRecurring').checked;
+
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errorEl.textContent = 'Please enter a valid email address.';
+      errorEl.style.display = 'block';
+      return;
+    }
+
+    submitBtn.classList.add('loading');
+    submitBtn.disabled = true;
+
+    fetch('/api/create-checkout-session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ amount: amount, name: name, email: email, message: message, recurring: recurring })
+    })
+    .then(function(response) {
+      return response.json().then(function(data) {
+        if (!response.ok) throw new Error(data.message || 'Something went wrong');
+        return data;
+      });
+    })
+    .then(function(data) {
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        throw new Error('No checkout URL returned');
+      }
+    })
+    .catch(function(err) {
+      errorEl.textContent = err.message || 'Failed to start checkout. Please try again.';
+      errorEl.style.display = 'block';
+      submitBtn.classList.remove('loading');
+      submitBtn.disabled = false;
+    });
+  });
 }
