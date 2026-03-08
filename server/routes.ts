@@ -33,9 +33,10 @@ export async function registerRoutes(
         return;
       }
 
-      const protocol = req.headers["x-forwarded-proto"] || req.protocol;
-      const host = req.headers.host;
-      const baseUrl = `${protocol}://${host}`;
+      const replitDomain = process.env.REPLIT_DEV_DOMAIN || process.env.REPLIT_DOMAINS?.split(",")[0];
+      const baseUrl = replitDomain
+        ? `https://${replitDomain}`
+        : `${req.protocol}://${req.headers.host}`;
 
       const metadata: Record<string, string> = {};
       if (name) metadata.donor_name = name;
