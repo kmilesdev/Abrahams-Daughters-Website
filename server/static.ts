@@ -1,8 +1,9 @@
 import express, { type Express } from "express";
 import path from "path";
+import fs from "fs";
 
 export function serveStatic(app: Express) {
-  const publicPath = path.resolve(import.meta.dirname, "..", "public");
+  const publicPath = path.resolve(process.cwd(), "public");
   
   // Serve static files from public folder
   app.use(express.static(publicPath));
